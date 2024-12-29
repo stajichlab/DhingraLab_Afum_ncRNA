@@ -1,0 +1,15 @@
+Status	../results/STAR_Af293/WT_25_1.Aligned.out.bam	../results/STAR_Af293/WT_25_2.Aligned.out.bam	../results/STAR_Af293/WT_25_3.Aligned.out.bam	../results/STAR_Af293/WT_30_1.Aligned.out.bam	../results/STAR_Af293/WT_30_2.Aligned.out.bam	../results/STAR_Af293/WT_30_3.Aligned.out.bam	../results/STAR_Af293/WT_37_1.Aligned.out.bam	../results/STAR_Af293/WT_37_1.sort.bam	../results/STAR_Af293/WT_37_2.Aligned.out.bam	../results/STAR_Af293/WT_37_3.Aligned.out.bam	../results/STAR_Af293/WT_42_1.Aligned.out.bam	../results/STAR_Af293/WT_42_2.Aligned.out.bam	../results/STAR_Af293/WT_42_3.Aligned.out.bam
+Assigned	156250	159001	163727	178560	232063	135819	133255	133255	242636	227312	206867	199890	194732
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	37899638	38640731	38114197	36523364	40079529	41024365	33283227	33283227	41332036	39358714	48227979	37277972	40893780
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	0	0	0	0	0	0	0	0	0	0	0	0	0

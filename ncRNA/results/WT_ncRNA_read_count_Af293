@@ -1,0 +1,17 @@
+# Program:featureCounts v2.0.6; Command:"featureCounts" "-G" "../db/AfumigatusAf293_Genome.fasta" "-s" "0" "-a" "ncRNA.saf" "--tmpDir" "/scratch/jstajich/9545977" "-o" "results/WT_ncRNA_read_count_Af293" "-F" "SAF" "-T" "16" "-M" "../results/STAR_Af293/WT_25_1.Aligned.out.bam" "../results/STAR_Af293/WT_25_2.Aligned.out.bam" "../results/STAR_Af293/WT_25_3.Aligned.out.bam" "../results/STAR_Af293/WT_30_1.Aligned.out.bam" "../results/STAR_Af293/WT_30_2.Aligned.out.bam" "../results/STAR_Af293/WT_30_3.Aligned.out.bam" "../results/STAR_Af293/WT_37_1.Aligned.out.bam" "../results/STAR_Af293/WT_37_1.sort.bam" "../results/STAR_Af293/WT_37_2.Aligned.out.bam" "../results/STAR_Af293/WT_37_3.Aligned.out.bam" "../results/STAR_Af293/WT_42_1.Aligned.out.bam" "../results/STAR_Af293/WT_42_2.Aligned.out.bam" "../results/STAR_Af293/WT_42_3.Aligned.out.bam" "-p" 
+Geneid	Chr	Start	End	Strand	Length	../results/STAR_Af293/WT_25_1.Aligned.out.bam	../results/STAR_Af293/WT_25_2.Aligned.out.bam	../results/STAR_Af293/WT_25_3.Aligned.out.bam	../results/STAR_Af293/WT_30_1.Aligned.out.bam	../results/STAR_Af293/WT_30_2.Aligned.out.bam	../results/STAR_Af293/WT_30_3.Aligned.out.bam	../results/STAR_Af293/WT_37_1.Aligned.out.bam	../results/STAR_Af293/WT_37_1.sort.bam	../results/STAR_Af293/WT_37_2.Aligned.out.bam	../results/STAR_Af293/WT_37_3.Aligned.out.bam	../results/STAR_Af293/WT_42_1.Aligned.out.bam	../results/STAR_Af293/WT_42_2.Aligned.out.bam	../results/STAR_Af293/WT_42_3.Aligned.out.bam
+Afu-182	Chr4_A_fumigatus_Af293	2000431	2000647	-	217	126	165	152	19	30	13	25	25	53	50	56	23	21
+Afu-202	Chr1_A_fumigatus_Af293	2714414	2714678	-	265	98	104	100	52	50	32	146	146	111	61	106	81	103
+Afu-67	Chr4_A_fumigatus_Af293;Chr4_A_fumigatus_Af293	444954;709669	444973;709688	-;-	40	20168	20341	19901	1985	4812	4044	1935	1935	5265	3550	8321	4694	4316
+Afu-254	Chr7_A_fumigatus_Af293	927204	927348	-	145	133739	136199	141349	175025	225687	130567	129924	129924	235381	222165	196661	193929	188985
+Afu-203	Chr3_A_fumigatus_Af293	3785105	3785214	+	110	62	52	82	49	40	21	64	64	108	86	74	34	47
+Afu-222	Chr4_A_fumigatus_Af293	3256473	3256494	-	22	0	1	2	0	0	0	0	0	0	0	0	2	0
+Afu-262	Chr1_A_fumigatus_Af293	2675372	2675395	+	24	34	19	18	60	65	39	16	16	19	22	13	3	21
+Afu-309	Chr4_A_fumigatus_Af293	2735739	2736056	+	318	672	761	813	131	233	129	159	159	358	266	318	168	162
+Afu-318	Chr7_A_fumigatus_Af293	415006	415029	-	24	75	75	58	85	95	80	71	71	88	54	113	101	114
+Afu-322	Chr2_A_fumigatus_Af293	3404793	3404838	-	46	594	530	580	753	619	546	535	535	614	478	712	557	615
+Afu-336	Chr1_A_fumigatus_Af293	2523503	2523530	+	28	180	235	209	36	58	60	60	60	223	233	128	58	54
+Afu-364	Chr3_A_fumigatus_Af293;Chr6_A_fumigatus_Af293	710476;2935513	710493;2935530	+;+	36	18	7	6	14	7	5	2	2	4	2	2	0	4
+Afu-448	Chr1_A_fumigatus_Af293	3048109	3048137	-	29	232	271	251	81	124	78	83	83	119	126	86	65	81
+Afu-465	Chr4_A_fumigatus_Af293	2319697	2319712	-	16	44	37	57	33	35	18	31	31	58	56	21	23	36
+Afu-484	Chr3_A_fumigatus_Af293	1802200	1802240	+	41	208	204	149	237	208	187	204	204	235	163	256	152	173

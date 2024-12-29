@@ -1,0 +1,16 @@
+Name	Copies	cDNA (nt)	Northern blot (nt)	Location	Accession number
+Afu-182	17	219	300	Intergenic; Afu4g07680/Afu4g07690	AM921946
+Afu-202	5	266	270	Intergenic; Afu1g10420/Afu1g10430	AM921947
+Afu-67	2	21	600/190	Intergenic; Afu4g01630/Afu4g02610	AM921948
+Afu-254	2	163	90/420	Intergenic; Afu7g04110/Afu7g04120	AM921949
+Afu-203	1	111	110	Intron 1 (sense); Afu3g14240	AM921950
+Afu-222	1	22	535/250	Intergenic; Afu4g12410/Afu4g12420	AM921951
+Afu-262	1	25	225	Intergenic; Afu1g10370/Afu1g10380	AM921952
+Afu-309	1	318	320	Intergenic; Afu4g10430/Afu4g10420	AM921953
+Afu-318	1	24	70	Intergenic; Afu7g01590/Afu7g01600	AM921954
+Afu-322	1	46	75/35	Intergenic; Afu2g13250/Afu2g13240	AM921955
+Afu-336	1	28	130	Intergenic; Afu1g09740/Afu1g09760	AM921956
+Afu-364	1	18	100	Intergenic; Afu1g13820/Afu1g13830; Intergenic; Afu3g03090/Afu3g03130;Exon4-Intron4; Afu3g02730;Intergenic; Afu6g11780/Afu6g11790	AM921957
+Afu-448	1	29	315	Intergenic; Afu1g11550/Afu1g11540	AM921958
+Afu-465	1	17	270	Intron 2 (sense); Afu4g08930	AM921959
+Afu-484	1	41	600	Exon2 (antisense); Afu3g07170	AM921960
