@@ -1,0 +1,15 @@
+Status	results/STAR_Af293/Del_25_1.Aligned.out.bam	results/STAR_Af293/Del_25_2.Aligned.out.bam	results/STAR_Af293/Del_25_3.Aligned.out.bam	results/STAR_Af293/Del_30_1.Aligned.out.bam	results/STAR_Af293/Del_30_2.Aligned.out.bam	results/STAR_Af293/Del_30_3.Aligned.out.bam	results/STAR_Af293/Del_37_1.Aligned.out.bam	results/STAR_Af293/Del_37_2.Aligned.out.bam	results/STAR_Af293/Del_37_3.Aligned.out.bam	results/STAR_Af293/Del_42_1.Aligned.out.bam	results/STAR_Af293/Del_42_2.Aligned.out.bam	results/STAR_Af293/Del_42_3.Aligned.out.bam	results/STAR_Af293/WT_25_1.Aligned.out.bam	results/STAR_Af293/WT_25_2.Aligned.out.bam	results/STAR_Af293/WT_25_3.Aligned.out.bam	results/STAR_Af293/WT_30_1.Aligned.out.bam	results/STAR_Af293/WT_30_2.Aligned.out.bam	results/STAR_Af293/WT_30_3.Aligned.out.bam	results/STAR_Af293/WT_37_1.Aligned.out.bam	results/STAR_Af293/WT_37_2.Aligned.out.bam	results/STAR_Af293/WT_37_3.Aligned.out.bam	results/STAR_Af293/WT_42_1.Aligned.out.bam	results/STAR_Af293/WT_42_2.Aligned.out.bam	results/STAR_Af293/WT_42_3.Aligned.out.bam
+Assigned	37564068	36684334	37367301	31139094	39957989	31448718	39744094	37508399	37887131	36891456	31317366	35277598	35406871	36048106	35417594	34583570	37756577	38763363	31444578	39011292	37036125	45364028	35000813	38476141
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	2034455	2350738	2022989	1513567	2233434	1533693	2261073	2267578	2430738	2279412	2010508	1916304	2396614	2498450	2611189	1823057	2253741	2103551	1760793	2272088	2282307	2809541	2279583	2379838
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	260757	264330	318946	213085	247739	235541	239823	247207	305285	225806	191646	235064	252403	253176	249141	295297	301274	293270	211111	291292	267594	261277	197466	232533
