@@ -200,8 +200,6 @@ write.csv(fpm(dds),"reports/WT_FPM.csv")
 
 # DRAW 25 VS 37 HEATMAP
 
-pdf("plots/WT_RNAseq_25_37.pdf")
-
 df2 <- as.data.frame(colData(dds)[,c("condition")])
                      
 rownames(df2) = colnames(WTcount)
@@ -215,18 +213,17 @@ vsdvals_25_37f <- vsdvals_25_37 %>% filter(GeneID %in% rownames(resSig)) %>% col
 pheatmap(vsdvals_25_37f, cluster_rows=TRUE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/WT_RNAseq_25_37_heatmap.pdf",
          main="WT 25 vs 37 Expression")
 
 vsdvals_25_37f <- vsdvals_25_37f %>% arrange(WT_25_1)
 pheatmap(vsdvals_25_37f, cluster_rows=FALSE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/WT_RNAseq_25_37_heatmap_25ordered.pdf",
          main="WT 25 vs 37 Expression ordered by 25C")
 
 
-pdf("plots/WT_RNAseq_25_42.pdf")
 res <- results(dds, contrast=c("condition","25","42"))
 res
 
@@ -254,14 +251,14 @@ df2 <- as.data.frame(colData(dds)[,c("condition")])
 rownames(df2) = colnames(WTcount)
 colnames(df2) = c("Temperature")
 pheatmap(vsdvals_25_42f, cluster_rows=TRUE, show_rownames=FALSE,
-         fontsize_row = 7,fontsize_col = 7,
+         fontsize_row = 7,fontsize_col = 7,filename="plots/WT_RNAseq_25_42_heatmap.pdf",
          cluster_cols=FALSE, annotation_col=df2,main="WT 25 vs 42")
 
 vsdvals_25_42f <- vsdvals_25_42f %>% arrange(WT_25_1)
 pheatmap(vsdvals_25_42f, cluster_rows=FALSE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/WT_RNAseq_25_42_heatmap_ordered.pdf",
          main="WT 25 vs 42 Expression ordered by 25C")
 
 
@@ -270,8 +267,6 @@ resSig <- subset(resLFC, padj < 0.05 & abs(log2FoldChange) >= 1)
 resSig <- resSig[order(resSig$pvalue),]
 write.csv(resSig,"reports/WT_42_vs_25.csv")
 
-
-pdf("plots/WT_RNAseq_37_42.pdf")
 
 res <- results(dds, contrast=c("condition","37","42"))
 resultsNames(dds)
@@ -306,14 +301,14 @@ vsdvals_37_42f <- vsdvals_37_42 %>% filter(GeneID %in% rownames(resSig)) %>%colu
 pheatmap(vsdvals_37_42f, cluster_rows=TRUE, show_rownames=TRUE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/WT_RNAseq_37_42_heatmap.pdf",
          main="WT 37 vs 42 Expression")
 
 vsdvals_37_42f <- vsdvals_37_42f %>% arrange(WT_37_1)
 pheatmap(vsdvals_37_42f, cluster_rows=FALSE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/WT_RNAseq_37_42_heatmap_ordered.pdf",
          main="WT 37 vs 42 Expression order by 37C")
 
 
@@ -451,8 +446,7 @@ topVarGenes <- order(-rowVars(log.norm.counts)[0:100])
 mat<-log.norm.counts[topVarGenes,]
 mat<-mat -rowMeans(mat)
 
-pdf("plots/DEL_RNASeq_heatmap_allTemp.pdf")
-pheatmap(mat,method="complete",main = "DEL TopVar normalized", show_rownames = F,
+pheatmap(mat,method="complete",main = "DEL TopVar normalized", show_rownames = F, filename="plots/DEL_RNASeq_heatmap_allTemp.pdf",
          annotation_legend = FALSE, legend=T, cluster_rows=TRUE, cexRow=0.55 )
 
 topVarGenes1 <- order(-rowVars(assay(rld)))[0:2000]
@@ -461,7 +455,7 @@ mat1<- mat1 - rowMeans(mat1)
 
 pheatmap(mat1, method="complete",
          main = "Unsupervised 2000 genes ",
-         show_rownames = F,annotation_legend = FALSE, 
+         show_rownames = F,annotation_legend = FALSE, filename="plots/DEL_RNASeq_heatmap_2000_allTemp.pdf",
          legend=T, cluster_cols=TRUE)
 
 dds <- DESeq(dds)
@@ -490,8 +484,6 @@ write.csv(fpm(dds),"reports/WT_FPM.csv")
 
 # DRAW 25 VS 37 HEATMAP
 
-pdf("plots/DEL_RNAseq_25_37.pdf")
-
 df2 <- as.data.frame(colData(dds)[,c("condition")])
 
 rownames(df2) = colnames(DELcount)
@@ -505,18 +497,17 @@ vsdvals_25_37f <- vsdvals_25_37 %>% filter(GeneID %in% rownames(resSig)) %>% col
 pheatmap(vsdvals_25_37f, cluster_rows=TRUE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2, filename="plots/DEL_RNAseq_25_37_heatmap.pdf",
          main="DEL 25 vs 37 Expression")
 
 vsdvals_25_37f <- vsdvals_25_37f %>% arrange(Del_25_1)
 pheatmap(vsdvals_25_37f, cluster_rows=FALSE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/DEL_RNAseq_25_37_heatmap_25Cordered.pdf",
          main="DEL 25 vs 37 Expression ordered by 25C")
 
 
-pdf("plots/DEL_RNAseq_25_42.pdf")
 res <- results(dds, contrast=c("condition","25","42"))
 res
 
@@ -544,14 +535,14 @@ df2 <- as.data.frame(colData(dds)[,c("condition")])
 rownames(df2) = colnames(DELcount)
 colnames(df2) = c("Temperature")
 pheatmap(vsdvals_25_42f, cluster_rows=TRUE, show_rownames=FALSE,
-         fontsize_row = 7,fontsize_col = 7,
+         fontsize_row = 7,fontsize_col = 7,filename="plots/DEL_RNAseq_25_42_heatmap.pdf",
          cluster_cols=FALSE, annotation_col=df2,main="DEL 25 vs 42")
 
 vsdvals_25_42f <- vsdvals_25_42f %>% arrange(Del_25_1)
 pheatmap(vsdvals_25_42f, cluster_rows=FALSE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/DEL_RNAseq_25_42_heatmap_25ordered.pdf",
          main="DEL 25 vs 42 Expression ordered by 25C")
 
 
@@ -559,9 +550,6 @@ pheatmap(vsdvals_25_42f, cluster_rows=FALSE, show_rownames=FALSE,
 resSig <- subset(resLFC, padj < 0.05 & abs(log2FoldChange) >= 1)
 resSig <- resSig[order(resSig$pvalue),]
 write.csv(resSig,"reports/DEL_42_vs_25.csv")
-
-
-pdf("plots/DEL_RNAseq_37_42.pdf")
 
 res <- results(dds, contrast=c("condition","37","42"))
 resultsNames(dds)
@@ -596,13 +584,13 @@ vsdvals_37_42f <- vsdvals_37_42 %>% filter(GeneID %in% rownames(resSig)) %>%colu
 pheatmap(vsdvals_37_42f, cluster_rows=TRUE, show_rownames=TRUE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/DEL_RNAseq_37_42_heatmap.pdf",
          main="DEL 37 vs 42 Expression")
 
 vsdvals_37_42f <- vsdvals_37_42f %>% arrange(Del_37_1)
 pheatmap(vsdvals_37_42f, cluster_rows=FALSE, show_rownames=FALSE,
          fontsize_row = 4,fontsize_col = 7,
          cluster_cols=FALSE, 
-         annotation_col=df2,
+         annotation_col=df2,filename="plots/DEL_RNAseq_37_42_heatmap_37ordered.pdf",
          main="DEL 37 vs 42 Expression order by 37C")
 
