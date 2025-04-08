@@ -1,14 +1,12 @@
 #!/usr/bin/bash -l
-#SBATCH -p epyc -c 24 -N 1 -n 1 --mem 64gb --out logs/make_bam.log
+#SBATCH -c 24 -N 1 -n 1 --mem 64gb --out logs/make_bam_sort.log
 
-CPU=8
+CPU=24
 module load samtools
 FOLDER=results
 	#Af293
-for STRAIN in A1163
+for STRAIN in Af293 A1163
 do
-	#parallel -j 6 samtools view --threads $CPU -O BAM -o {.}.bam {} ::: $(find $FOLDER/STAR_$STRAIN -name "*.sam")
-	echo "$FOLDER/STAR_$STRAIN"
 	mkdir -p $FOLDER/STAR_${STRAIN}_sort
 	for file in $(find $FOLDER/STAR_$STRAIN -name "*.bam")
 	do
