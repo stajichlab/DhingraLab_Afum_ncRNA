@@ -80,8 +80,8 @@ multiecdf( counts(dds, normalized = T),
 MA.idx = t(combn(1:4, 2))
 for( i in  seq_along( MA.idx[,1])){ 
   MDPlot(counts(dds, normalized = T), 
-         c(MA.idx[i,1],MA.idx[i,2]), 
-         main = paste( colnames(dds)[MA.idx[i,1]], " vs ",
+        c(MA.idx[i,1],MA.idx[i,2]), 
+        main = paste( colnames(dds)[MA.idx[i,1]], " vs ",
                        colnames(dds)[MA.idx[i,2]] ), ylim = c(-3,3))
 }
 
