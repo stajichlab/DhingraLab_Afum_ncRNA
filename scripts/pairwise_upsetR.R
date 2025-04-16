@@ -42,7 +42,7 @@ upset(fromList(WT_af182Del), order.by = "freq",
 p<-upset(fromList(WT_af182Del), order.by = "freq",  
       mainbar.y.label = "Genes",
       sets.x.label    = "Significant Genes")
-pdf("plots/UpSet_WT_vs_afu182delta.pdf", height = 3.5, width = 5)
+pdf("plots/UpSet_WT_vs_afu182delta.pdf", height = 5, width = 5)
 p
 dev.off()
 
@@ -66,6 +66,6 @@ p<-upset(fromList(WT_TempCompare), order.by = "freq",
       mainbar.y.label = "Genes",
       sets.x.label    = "Significant Genes")
 
-pdf("plots/UpSet_WT_Temp_compare.pdf", height = 3.5, width = 5)
+pdf("plots/UpSet_WT_Temp_compare.pdf", height = 5, width = 5)
 p
 dev.off()
