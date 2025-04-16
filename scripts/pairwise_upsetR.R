@@ -37,13 +37,13 @@ WT_af182Del = list(Temp42 = Temp42names$GeneID,
 
 upset(fromList(WT_af182Del), order.by = "freq",  
       mainbar.y.label = "Genes",
-      sets.x.label    = "Significant Genes Per Comparison" )
+      sets.x.label    = "Significant Genes" )
 
-pdf("plots/UpSet_WT_vs_afu182delta.pdf")
-upset(fromList(WT_af182Del), order.by = "freq",  
+p<-upset(fromList(WT_af182Del), order.by = "freq",  
       mainbar.y.label = "Genes",
-      sets.x.label    = "Significant Genes Per Comparison")
-
+      sets.x.label    = "Significant Genes")
+pdf("plots/UpSet_WT_vs_afu182delta.pdf", height = 3.5, width = 5)
+p
 dev.off()
 
 
@@ -62,13 +62,10 @@ WT_TempCompare = list(Temp25_42 = WT25_42names$GeneID,
                    Temp25_37 = WT25_37names$GeneID,
                    Temp37_42 = WT37_42names$GeneID)
 
-upset(fromList(WT_TempCompare), order.by = "freq",  
+p<-upset(fromList(WT_TempCompare), order.by = "freq",  
       mainbar.y.label = "Genes",
-      sets.x.label    = "Significant Genes Per Comparison" )
+      sets.x.label    = "Significant Genes")
 
-pdf("plots/UpSet_WT_Temp_compare.pdf")
-upset(fromList(WT_TempCompare), order.by = "freq",  
-      mainbar.y.label = "Genes",
-      sets.x.label    = "Significant Genes Per Comparison")
+pdf("plots/UpSet_WT_Temp_compare.pdf", height = 3.5, width = 5)
+p
 dev.off()
-
