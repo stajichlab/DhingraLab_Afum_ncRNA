@@ -1,0 +1,12 @@
+#!/usr/bin/bash -l
+#SBATCH -p short -c 2 --mem 2gb --job-name GO_enrich --out logs/GO_enrich_WTvDel.out
+
+for file in $(ls reports/venngroups/venncount_Temp*_names.tsv)
+do
+    bash scripts/GoEnrichmentOfGeneIDs_SLIM.sh $file
+    if [ $? -ne 0 ]; then
+        echo "Error running GoEnrichmentOfGeneIDs.sh on $file"
+        exit 1
+    fi
+    echo "GO enrichment analysis completed for $file"
+done

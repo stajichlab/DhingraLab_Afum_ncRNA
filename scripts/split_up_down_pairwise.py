@@ -4,7 +4,7 @@ import csv
 import os
 
 infolder = "reports"
-outfolder = "reports/pairwise_exp_direction"
+outfolder = "reports/venngroups"
 
 
 
@@ -69,15 +69,15 @@ def main(inf=infolder,outf=outfolder):
                                 
                 for direction in classification:
                     if len(classification[direction]) > 0:
-                        for class_string in classification[direction]:
-                            if class_string not in gene_classification[direction]:
-                                gene_classification[direction][class_string] = set()
-                            gene_classification[direction][class_string].add(gene)
+                        class_string = ",".join(sorted(classification[direction]))
+                        if class_string not in gene_classification[direction]:
+                            gene_classification[direction][class_string] = set()
+                        gene_classification[direction][class_string].add(gene)
 
             # Create the output file name for all groups
             for direction in ['up', 'down', 'all']:
-                outfilect = os.path.join(outf, f"{groupname}_{direction}_count.tsv")
-                outfilenames = os.path.join(outf, f"{groupname}_{direction}_names.tsv")
+                outfilect = os.path.join(outf, f"venncount_{groupname}_{direction}_count.tsv")
+                outfilenames = os.path.join(outf, f"venncount_{groupname}_{direction}_names.tsv")
                 with open(outfilect, 'w', newline='') as ctfh, open(outfilenames, 'w', newline='') as namefh:
                     writer = csv.writer(namefh, delimiter="\t")
                     writer.writerow(["Gene", "Classification"])
