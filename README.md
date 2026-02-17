@@ -1,7 +1,8 @@
-# Introduction
+# Dataset
 
-RNAseq analysis for testing role of ncRNA and oxygen and Azole resistance
+RNAseq analysis for testing role of an ncRNA and temperature with Azole resistance
 
-# Authors
+This uses STAR to map reads, featureCount to extract read counts, DESeq to identify differentially expressed genes, explore TPM, and compare up and down regulation in volcano plots, GO enrichment for terms in different expression change categories across three temperatures (25, 37C, 42C).
 
-Jason Stajich <jason.stajich-at-ucr.edu>
+Poudyal N, Mehlem RT,  Devkota R, Stajich JE, and  Dhingra S. Thermal adaptation cross-talks with azole response through lncRNA in 
+_Aspergillus fumigatus_.
