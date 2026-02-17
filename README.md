@@ -6,3 +6,5 @@ This uses STAR to map reads, featureCount to extract read counts, DESeq to ident
 
 Poudyal N, Mehlem RT,  Devkota R, Stajich JE, and  Dhingra S. Thermal adaptation cross-talks with azole response through lncRNA in 
 _Aspergillus fumigatus_.
+
+Dataset is archived at Zenodo as [10.5281/zenodo.18673023](https://doi.org/10.5281/zenodo.18673023). 
